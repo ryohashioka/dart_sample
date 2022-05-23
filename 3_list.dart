@@ -1,6 +1,14 @@
+/// 配列型のサンプルコード
+/// 配列は複数のデータを管理することができます。順序も保持されます。
 void main() {
+  // 文字型を複数格納できる配列
   List<String> list = ["data1", "data2", "data3"];
   print(list);
+
+  // 取り出し
+  print(list[0]);
+  print(list[1]);
+  print(list[2]);
   
   // 追加
   list.add("data4");
@@ -12,10 +20,17 @@ void main() {
   list.removeLast();
   print(list);
 
-  // for
+  // forEach（繰り返し）
   int counter = 1;
   list.forEach((value) {
     print('$counter : $value');
     counter++;
   });
+
+  // その他、int, bool, List, Map 等の他の型も指定可能
+  // dynamic などの動的な型指定も可能
+  List<dynamic> dynamicList = [123, 'abc', true];
+  print(dynamicList);
+
+  // 演習：配列を定義して、追加、削除してみよう
 }
