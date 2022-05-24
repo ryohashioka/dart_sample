@@ -15,7 +15,7 @@ void main() {
 
   // 演習：int 型の変数を定義して引算してみよう
 
-  // double : 整数型（小数）
+  // double : 数値型（小数）
   print("== double ==");
   double dnumber = 1.05;
   print(dnumber);
@@ -44,13 +44,13 @@ void main() {
   bool flag = true;
   print(flag);
   print(!flag);
-  
+
   // List : 配列型
   // 3_list で詳細を解説
   print("== List ==");
   List<String> list = ["data1", "data2", "data3"];
   print(list);
-  
+
   // Map : 辞書型
   // 4_map で詳細を解説
   print("== Map ==");
