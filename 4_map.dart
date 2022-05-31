@@ -1,7 +1,6 @@
 /// 辞書型のサンプルコード
 /// 辞書は Key と Value のセットで複数データを管理する型です。
 void main() {
-  
   // 辞書型の定義と取り出し
   print("== Map ==");
   Map<String, int> json = {
@@ -15,12 +14,10 @@ void main() {
 
   // 追加、編集
   json["key4"] = 100;
-  json.addAll(
-    {
-      'key6': 0,
-      'key8': 10,
-    }
-  );
+  json.addAll({
+    'key6': 0,
+    'key8': 10,
+  });
   json["key2"] = 100;
   print(json);
   print(json["key4"]);

@@ -9,8 +9,8 @@ void main() {
   print(list[0]);
   print(list[1]);
   print(list[2]);
-  
-  // 追加
+
+  // 末尾に追加
   list.add("data4");
   list.add("data5");
   print(list);
@@ -24,7 +24,9 @@ void main() {
   int counter = 1;
   list.forEach((value) {
     print('$counter : $value');
+    // counter 変数の値を +1
     counter++;
+    // counter = counter + 1;
   });
 
   // その他、int, bool, List, Map 等の他の型も指定可能
