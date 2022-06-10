@@ -31,6 +31,7 @@ class Student {
   // コンストラクタ
   // インスタンス生成時に必ず呼ばれます。
   Student(String name, String course, int totalLessons, int countOfLessons) {
+    // 自分の変数を参照するときは this を使用
     this.name = name;
     this.course = course;
     this._totalLessons = totalLessons;
@@ -39,6 +40,7 @@ class Student {
 
   // 受講生の受講状況を取得
   String getStatus() {
+    // this は無くても参照できる
     if (_countOfLessons <= 0) {
       return "未受講";
     } else if (_countOfLessons < _totalLessons) {
