@@ -66,5 +66,18 @@ void main() {
   print("== 30歳以下 ==");
   print(filter_by_under_than_age(users, 30));
 
+  // if - else if - else
+  users.forEach((user) {
+    if (user["age"] <= 10) {
+      print(user["name"] + "さんは10歳以下");
+    } else if (user["age"] <= 20) {
+      print(user["name"] + "さんは11歳～20歳");
+    } else if (user["age"] <= 30) {
+      print(user["name"] + "さんは21歳～30歳");
+    } else {
+      print(user["name"] + "さんは30歳より上");
+    }
+  });
+
   // 演習：ユーザに「住所」の情報を追加し、「大阪府」に住んでいるユーザを返却する関数を作成してください。
 }
