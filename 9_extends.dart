@@ -53,6 +53,14 @@ class Shelf extends Item {
   double width; // 幅
   double height; // 高さ
   double depth; // 奥行
+
+  // 商品のレビューをポスト
+  @override
+  void postReview(String comment, int star) {
+    print("== 親の処理を上書きすることができます。 ==");
+    // 親の処理を呼び出すこともできます。
+    super.postReview(comment, star);
+  }
 }
 
 void main() {
